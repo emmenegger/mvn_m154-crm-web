@@ -7,6 +7,12 @@
 
 	<packaging>jar</packaging>
 
+	<properties>
+			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+			<maven.compiler.source>1.8</maven.compiler.source>
+			<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>ch.emmenegger.modul154.mvn_m154-crm</groupId>
@@ -57,7 +63,7 @@
 								<!-- add Main-Class to manifest file -->
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>/mvn_m154-crm-web/src/main/java/ch/ilv/crm/web/CrmApp.java</mainClass>
+									<mainClass>ch.ilv.crm.web.CrmApp</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
@@ -72,9 +78,6 @@
 
 				<configuration>
 					<verbose>true</verbose>
-					<!-- authConfig>
-						<username>michaelhauck</username>
-					</authConfig-->
 					<images>
 						<image>
 							<name>crm-web-image</name>
