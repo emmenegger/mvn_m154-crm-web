@@ -15,6 +15,12 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.141.59</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>ch.emmenegger.modul154.mvn_m154-crm</groupId>
 			<artifactId>mvn_m154-crm</artifactId>
 		    <version>0.0.1-SNAPSHOT</version>
